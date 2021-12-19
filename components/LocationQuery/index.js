@@ -4,7 +4,7 @@ import CrimePost from '../CrimePost'
 import Header from '../Header'
 
 export default function LocationQuery() {
-  let [city, setCity] = useState()
+  let [city, setCity] = useState('Välj stad')
   let [input, setInput] = useState('')
 
   const fetcher = (url) => fetch(url).then((res) => res.json())

@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>BrottsplatsHittaren</title>
+        <title>Crime Locator</title>
       </Head>
-      <Header title="BrottsplatsHittaren" />
+      <Header title="Crime Locator" />
       <IndexQuery />
       <LocationQuery />
       <Footer />

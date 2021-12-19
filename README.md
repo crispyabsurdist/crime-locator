@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # crime-locator
 
-A Next.js hobby project that uses an api to get locally current crime reports (sweden) .
+A Next.js hobby project that uses an open api to get locally current crime reports (sweden) .
 
 First, run the development server:
 
@@ -16,5 +16,5 @@ yarn dev
 
 - mutate() in swr api fetcher
 - search location via longitude & latitude
-- add bootstrap
 - maybe add tailwind
+- sexy things up 

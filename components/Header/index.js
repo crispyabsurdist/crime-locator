@@ -2,10 +2,14 @@ import styles from './Header.module.scss'
 
 export default function Header({ title, location }) {
   return (
-    <div className={`${styles.headerSection}`}>
-      <h2 className="title">
-        {title} {location && <span>{location}</span>}
-      </h2>
-    </div>
+    <section className={`container`}>
+      <div className={`row`}>
+        <div className={`col-12 ${styles.pageHeader}`}>
+          <h1 className="title">
+            {title} {location && <span>{location}</span>}
+          </h1>
+        </div>
+      </div>
+    </section>
   )
 }

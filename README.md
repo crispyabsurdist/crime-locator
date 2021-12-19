@@ -11,3 +11,10 @@ npm run dev
 # or
 yarn dev
 ```
+
+## TODO / Ideas
+
+mutate() in swr api fetcher
+search location via longitude & latitude
+add bootstrap
+maybe add tailwind

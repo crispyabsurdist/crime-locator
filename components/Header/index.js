@@ -1,9 +1,11 @@
 import styles from './Header.module.scss'
 
-export default function Header({ title }) {
+export default function Header({ title, location }) {
   return (
     <div className={`${styles.headerSection}`}>
-      <h1 className="title">{title}</h1>
+      <h2 className="title">
+        {title} {location && <span>{location}</span>}
+      </h2>
     </div>
   )
 }

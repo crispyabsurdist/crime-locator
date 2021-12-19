@@ -4,8 +4,8 @@ import CrimePost from '../CrimePost'
 import Header from '../Header'
 
 export default function LocationQuery() {
-  let [city, setCity] = useState()
-  let [input, setInput] = useState()
+  let [city, setCity] = useState('')
+  let [input, setInput] = useState('')
 
   const fetcher = (url) => fetch(url).then((res) => res.json())
   const { data, error } = useSWR(
@@ -23,7 +23,7 @@ export default function LocationQuery() {
 
   return (
     <div className="crimeContainer">
-      <Header title={'Senaste händerlserna LOKALT'} />
+      <Header title={`Senast rapporterat i`} location={city} />
       <form onSubmit={handleSubmit}>
         <input
           type="text"

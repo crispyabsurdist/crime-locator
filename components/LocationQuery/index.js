@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import useSWR from 'swr'
 import CrimePost from '../CrimePost'
 import Header from '../Header'

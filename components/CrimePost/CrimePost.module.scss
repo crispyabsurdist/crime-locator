@@ -1,6 +1,7 @@
 .crimePost {
   position: relative;
   padding: 30px;
+  margin-top: 100px;
   color: #8c8c8c;
   background-color: #1d1d1d;
   width: 100%;
@@ -9,4 +10,31 @@
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+
+.crimePostMapImage {
+  position: relative;
+  width: auto;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  top: -100px;
+  margin-bottom: -60px;
+}
+
+.noImage {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-family: 'Archivo', sans-serif;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }

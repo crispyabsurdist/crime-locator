@@ -11,8 +11,8 @@ export default function Home() {
         <title>Crime Locator</title>
       </Head>
       <Header title="Crime Locator" />
-      <IndexQuery />
       <LocationQuery />
+      <IndexQuery />
       <Footer />
     </>
   )

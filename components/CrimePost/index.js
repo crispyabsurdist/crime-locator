@@ -8,8 +8,8 @@ import styles from './CrimePost.module.scss'
 
 function FavoriteButton(post) {
   const [favorite, setFavorite] = useState(false)
-  const currentlyAFavorite = <FontAwesomeIcon icon={faHeart} />
-  const notCurrentlyAFavorite = <FontAwesomeIcon icon={faHeartBroken} />
+  const isFav = <FontAwesomeIcon icon={faHeart} />
+  const isNotFav = <FontAwesomeIcon icon={faHeartBroken} />
 
   const toggleFavorite = () => {
     const obj = {
@@ -39,7 +39,7 @@ function FavoriteButton(post) {
       onClick={() => toggleFavorite(post)}
       key={post.id}
     >
-      {favorite === true ? currentlyAFavorite : notCurrentlyAFavorite}
+      {favorite === true ? isFav : isNotFav}
     </button>
   )
 }
@@ -62,13 +62,13 @@ export default function CrimePost({ data }) {
         </section>
         <section>
           <div className={`${styles.postHeader}`}>
-            <h3>{data.title_type}</h3>
+            <h3>{`${data.title_type}`}</h3>
             <FavoriteButton post={data} />
           </div>
-          <h4>{data.title_location}</h4>
-          <small>{data.date_human}</small>
-          <p>{data.content_teaser}</p>
-          <Link href={data.external_source_link}>
+          <h4>{`${data.title_location}`}</h4>
+          <small>{`${data.date_human}`}</small>
+          <p>{`${data.content_teaser}`}</p>
+          <Link href={`${data.external_source_link}`}>
             <a rel="no-referrer noopener" target="_blank">
               Läs vidare om ärendet
             </a>

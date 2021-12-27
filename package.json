@@ -17,6 +17,9 @@
     "swr": "^1.1.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.7"
   }

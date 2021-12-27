@@ -38,3 +38,15 @@
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
+
+.postHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.crimeFav {
+  background: transparent;
+  border: none;
+  color: red;
+}

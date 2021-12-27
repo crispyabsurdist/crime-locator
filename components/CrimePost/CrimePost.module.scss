@@ -10,6 +10,12 @@
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+
+  small {
+    display: block;
+    margin-bottom: 5px;
+    font-style: italic;
+  }
 }
 
 .crimePostMapImage {
@@ -57,4 +63,13 @@
 .crimeFav {
   background: transparent;
   border: none;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+
+  >small {
+    margin-left: 15px;
+  }
 }

@@ -3,13 +3,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, faHeartBroken } from '@fortawesome/free-solid-svg-icons'
+import {
+  faHeart,
+  faHeartBroken,
+  faClock,
+} from '@fortawesome/free-solid-svg-icons'
 import styles from './CrimePost.module.scss'
 
 function FavoriteButton(post) {
   const [favorite, setFavorite] = useState(false)
   const isFav = <FontAwesomeIcon icon={faHeart} />
   const isNotFav = <FontAwesomeIcon icon={faHeartBroken} />
+  const time = <FontAwesomeIcon icon={faClock} />
 
   const toggleFavorite = () => {
     const obj = {
@@ -66,7 +71,10 @@ export default function CrimePost({ data }) {
             <FavoriteButton post={data} />
           </div>
           <h4>{`${data.title_location}`}</h4>
-          <small>{`${data.date_human}`}</small>
+          <div className={`${styles.time}`}>
+            <FontAwesomeIcon icon={faClock} />
+            <small>{`${data.date_human}`}</small>
+          </div>
           <p>{`${data.content_teaser}`}</p>
           <Link href={`${data.external_source_link}`}>
             <a rel="no-referrer noopener" target="_blank">

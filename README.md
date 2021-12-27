@@ -14,7 +14,8 @@ yarn dev
 
 ## TODO / Ideas
 
-- mutate() in swr api fetcher
-- search location via longitude & latitude
-- maybe add tailwind
-- sexy things up 
+- mutate() in swr api fetcher.
+- search location via longitude & latitude-
+- CREATE FAVORITE PAGE WITH ADDED FAVORITES.
+- REPLACE LOCALSTORAGE WITH FIREBASE SOLUTION.
+- CREATE INITIAL STATE FROM LOCALSTORAGE ON FAVORITE POSTS.

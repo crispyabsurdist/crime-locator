@@ -7,8 +7,10 @@ A Next.js hobby project that uses an open api to get locally current crime repor
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
 # or
+yarn install
 yarn dev
 ```
 

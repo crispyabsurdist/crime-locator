@@ -14,7 +14,6 @@ function FavoriteButton(post) {
   const [favorite, setFavorite] = useState(false)
   const isFav = <FontAwesomeIcon icon={faHeart} />
   const isNotFav = <FontAwesomeIcon icon={faHeartBroken} />
-  const time = <FontAwesomeIcon icon={faClock} />
 
   const toggleFavorite = () => {
     const obj = {

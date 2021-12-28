@@ -30,6 +30,7 @@
   -o-border-radius: 10px;
   top: -100px;
   margin-bottom: -60px;
+  background-color: #6272a4;
   box-shadow: 1.7px 1.7px 1.4px rgba(0, 0, 0, 0.013),
     3.9px 3.9px 3.1px rgba(0, 0, 0, 0.02),
     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.024),
@@ -43,10 +44,10 @@
 
 .noImage {
   position: absolute;
-  bottom: 0;
+  bottom: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
+  transform: translate(-50%, -50%);
+  color: #fff;  
   font-family: 'Archivo', sans-serif;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -63,7 +64,7 @@
 .crimeFav {
   background: transparent;
   border: none;
-  color: #bd93f9;
+  color: #c54662;
 }
 
 .time {

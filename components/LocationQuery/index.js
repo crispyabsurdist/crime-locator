@@ -5,7 +5,7 @@ import Header from '../Header'
 import styles from './LocationQuery.module.scss'
 
 export default function LocationQuery() {
-  let [city, setCity] = useState('Välj stad')
+  let [city, setCity] = useState('... ')
   let [input, setInput] = useState('')
 
   const fetcher = (url) => fetch(url).then((res) => res.json())

@@ -1,0 +1,72 @@
+.crimePost {
+  position: relative;
+  padding: 30px;
+  margin-top: 100px;
+  color: #f8f8f2;
+  background-color: #44475a;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+
+  small {
+    display: block;
+    margin-bottom: 5px;
+    font-style: italic;
+  }
+}
+
+.crimePostMapImage {
+  position: relative;
+  width: auto;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  top: -100px;
+  margin-bottom: -60px;
+  background-color: #6272a4;
+  box-shadow: 1.7px 1.7px 1.4px rgba(0, 0, 0, 0.013),
+    3.9px 3.9px 3.1px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.024),
+    10.3px 10.3px 8.2px rgba(0, 0, 0, 0.028),
+    15.2px 15.2px 12.2px rgba(0, 0, 0, 0.032),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.036),
+    33.5px 33.5px 26.8px rgba(0, 0, 0, 0.04),
+    53.4px 53.4px 42.7px rgba(0, 0, 0, 0.047),
+    100px 100px 80px rgba(0, 0, 0, 0.06);
+}
+
+.noImage {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;  
+  font-family: 'Archivo', sans-serif;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.postHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  color: #6272a4;
+
+  >small {
+    margin-left: 8px;
+  }
+}

@@ -2,7 +2,7 @@ import styles from './Header.module.scss'
 
 export default function Header({ title, location }) {
   return (
-    <section className={`container`}>
+    <header className={`container`}>
       <div className={`row`}>
         <div className={`col-12 ${styles.pageHeader}`}>
           <h1 className="title">
@@ -10,6 +10,6 @@ export default function Header({ title, location }) {
           </h1>
         </div>
       </div>
-    </section>
+    </header>
   )
 }

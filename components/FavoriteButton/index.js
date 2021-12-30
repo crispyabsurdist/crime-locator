@@ -21,10 +21,10 @@ export default function FavoriteButton(post) {
 
     setFavorite((favorite) => {
       if (favorite == true) {
-        localStorage.removeItem(obj.id, JSON.stringify(obj))
+        localStorage.removeItem('crime_' + obj.id, JSON.stringify(obj))
       }
       if (favorite == false) {
-        localStorage.setItem(obj.id, JSON.stringify(obj))
+        localStorage.setItem('crime_' + obj.id, JSON.stringify(obj))
       }
       return !favorite
     })

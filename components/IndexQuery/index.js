@@ -15,7 +15,7 @@ export default function IndexQuery() {
 
   return (
     <>
-      <Header title={'Senaste händerlserna Nationellt'} />
+      <Header title={'Senaste händelserna Nationellt'} />
       <div className={`container`}>
         <div className={`row`}>
           {data.data.map((crime, index) => {

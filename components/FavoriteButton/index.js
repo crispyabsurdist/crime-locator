@@ -4,7 +4,7 @@ import { faHeart, faHeartBroken } from '@fortawesome/free-solid-svg-icons'
 import styles from './FavoriteButton.module.scss'
 
 export default function FavoriteButton(post) {
-  const [favorite, setFavorite] = useState(false)
+  const [favorite, setFavorite] = useState([])
   const isFav = <FontAwesomeIcon icon={faHeart} />
   const isNotFav = <FontAwesomeIcon icon={faHeartBroken} />
 
@@ -21,10 +21,10 @@ export default function FavoriteButton(post) {
 
     setFavorite((favorite) => {
       if (favorite == true) {
-        localStorage.removeItem('crime_' + obj.id, JSON.stringify(obj))
+        localStorage.removeItem(obj.id, obj)
       }
       if (favorite == false) {
-        localStorage.setItem('crime_' + obj.id, JSON.stringify(obj))
+        localStorage.setItem(obj.id, JSON.stringify(obj))
       }
       return !favorite
     })

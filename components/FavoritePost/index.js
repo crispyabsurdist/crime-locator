@@ -1,15 +1,38 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import RemoveFavorite from '../RemoveFavorite'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock } from '@fortawesome/free-solid-svg-icons'
+import { faClock, faPlus } from '@fortawesome/free-solid-svg-icons'
 import styles from './FavoritePost.module.scss'
 
 export default function FavoritePost({ data }) {
+  const [className, setClassName] = useState('')
+  const [favorite, removeFavorite] = useState(true)
+  const Cross = <FontAwesomeIcon className={`${styles.cross}`} icon={faPlus} />
 
+  const removeFavoriteFunction = () => {
+    const obj = {
+      id: data.id,
+      image: data.image,
+      title_type: data.title_type,
+      title_location: data.title_location,
+      date_human: data.date_human,
+      content_teaser: data.content_teaser,
+      external_source_link: data.external_source_link,
+    }
+
+    removeFavorite((favorite) => {
+      if (favorite == true) {
+        localStorage.removeItem(obj.id, obj)
+        let hastaLaVistaBaby = document.getElementById(obj.id);
+        hastaLaVistaBaby.parentNode.removeChild(hastaLaVistaBaby); 
+      }
+      return !favorite
+    })
+  }
+  
   return (
-    <div className={`col-md-6 d-flex`}>
+    <div id={data.id} className={`col-md-6 d-flex`}>
       <div className={`${styles.crimePost}`}>
         <section className={`${styles.crimePostMapImage}`}>
           {data.image ? (
@@ -26,7 +49,13 @@ export default function FavoritePost({ data }) {
         <section>
           <div className={`${styles.postHeader}`}>
             <h3>{`${data.title_type}`}</h3>
-            <RemoveFavorite post={data} />
+            <button
+              className={`${styles.crimeFav}`}
+              onClick={() => removeFavoriteFunction()}
+              key={data.id}
+            >
+              {Cross}
+            </button>
           </div>
           <h4>{`${data.title_location}`}</h4>
           <div className={`${styles.time}`}>
@@ -41,6 +70,11 @@ export default function FavoritePost({ data }) {
           </Link>
         </section>
       </div>
+      <style jsx>{`
+        .removeFav {
+          display: none !important;
+        }
+      `}</style>
     </div>
   )
 }

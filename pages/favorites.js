@@ -13,7 +13,7 @@ export default function Favorites() {
       const post = localStorage.getItem(localStorage_index)
 
       if (post) {
-        setItem((arr) => arr.concat(JSON.parse(post)))
+        setItem((setItem) => setItem.concat(JSON.parse(post)))
       }
     }
   }, [])

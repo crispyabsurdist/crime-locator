@@ -19,7 +19,11 @@ export default function IndexQuery() {
       <div className={`container`}>
         <div className={`row`}>
           {data.data.map((crime, index) => {
-            return <CrimePost data={crime} key={index} />
+            if (crime.title_type === null){
+              return false
+            } else {
+              return <CrimePost data={crime} key={index} />
+            }
           })}
         </div>
       </div>

@@ -12,11 +12,11 @@ export default function FavoriteButton(post) {
     const obj = {
       id: post.post.id,
       image: post.post.image,
-      title: post.post.title_type,
-      location: post.post.title_location,
-      date: post.post.date_human,
-      teaser: post.post.content_teaser,
-      link: post.post.external_source_link,
+      title_type: post.post.title_type,
+      title_location: post.post.title_location,
+      date_human: post.post.date_human,
+      content_teaser: post.post.content_teaser,
+      external_source_link: post.post.external_source_link,
     }
 
     setFavorite((favorite) => {

@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import FavoriteButton from '../FavoriteButton'
+import RemoveFavorite from '../RemoveFavorite'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 import styles from './FavoritePost.module.scss'
 
-export default function CrimePost({ data }) {
+export default function FavoritePost({ data }) {
+
   return (
     <div className={`col-md-6 d-flex`}>
       <div className={`${styles.crimePost}`}>
@@ -25,7 +26,7 @@ export default function CrimePost({ data }) {
         <section>
           <div className={`${styles.postHeader}`}>
             <h3>{`${data.title_type}`}</h3>
-            <FavoriteButton post={data} />
+            <RemoveFavorite post={data} />
           </div>
           <h4>{`${data.title_location}`}</h4>
           <div className={`${styles.time}`}>

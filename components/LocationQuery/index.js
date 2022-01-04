@@ -42,7 +42,11 @@ export default function LocationQuery() {
         </div>
         <div className="row">
           {data.data.map((crime, index) => {
-            return <CrimePost data={crime} key={index} />
+            if (crime.id === null){
+              return false
+            } else {
+              return <CrimePost data={crime} key={index} />
+            }
           })}
         </div>
       </div>

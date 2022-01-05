@@ -4,7 +4,7 @@ import { faHeart, faHeartBroken } from '@fortawesome/free-solid-svg-icons'
 import styles from './FavoriteButton.module.scss'
 
 export default function FavoriteButton(post) {
-  const [favorite, setFavorite] = useState()
+  const [favorite, setFavorite] = useState(false)
   const isFav = <FontAwesomeIcon icon={faHeart} />
   const isNotFav = <FontAwesomeIcon icon={faHeartBroken} />
 

@@ -24,8 +24,8 @@ export default function FavoritePost({ data }) {
     removeFavorite((favorite) => {
       if (favorite == true) {
         localStorage.removeItem(obj.id, obj)
-        let hastaLaVistaBaby = document.getElementById(obj.id);
-        hastaLaVistaBaby.parentNode.removeChild(hastaLaVistaBaby); 
+        let htmlItem = document.getElementById(obj.id);
+        htmlItem.parentNode.removeChild(htmlItem); 
       }
       return !favorite
     })

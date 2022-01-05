@@ -18,11 +18,11 @@ export default function IndexQuery() {
       <Header title={'Senaste händelserna Nationellt'} />
       <div className={`container`}>
         <div className={`row`}>
-          {data.data.map((crime, index) => {
+          {data.data.map((crime) => {
             if (crime.id === null){
               return false
             } else {
-              return <CrimePost data={crime} key={index} />
+              return <CrimePost data={crime} key={crime.id} />
             }
           })}
         </div>

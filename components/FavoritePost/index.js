@@ -70,11 +70,6 @@ export default function FavoritePost({ data }) {
           </Link>
         </section>
       </div>
-      <style jsx>{`
-        .removeFav {
-          display: none !important;
-        }
-      `}</style>
     </div>
   )
 }

@@ -14,7 +14,7 @@ export default function MapComponent() {
 
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: 'AIzaSyBAvC5AIT83wF2zlF4r3KzeTFEUT7DnjBI',
+    googleMapsApiKey: '',
   })
 
   const [map, setMap] = useState(null)

@@ -25,7 +25,7 @@ export default function LocationQuery() {
   return (
     <div>
       <Header title={`Senast rapporterat i`} location={city} />
-      <div className={`container`}>
+      <div className={`container-fluid ${styles.serachSection}`}>
         <div className={`row justify-content-center`}>
           <div className={`col-md-6`}>
             <form className={`${styles.searchInput}`} onSubmit={handleSubmit}>

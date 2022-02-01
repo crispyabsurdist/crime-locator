@@ -16,9 +16,6 @@ yarn dev
 
 ## TODO / Ideas
 
-- mutate() in swr api fetcher.
-- search location via longitude & latitude-
-- CREATE FAVORITE PAGE WITH ADDED FAVORITES.
-- REPLACE LOCALSTORAGE WITH FIREBASE SOLUTION.
-- CREATE INITIAL STATE FROM LOCALSTORAGE ON FAVORITE POSTS.
-- FIXA NULL CHECKS
+
+# Current State
+My adhd hyperfixation lost interest, but will hopefully be able to finish the project soon :)
